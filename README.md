@@ -4,7 +4,7 @@ This exercise is intended to consolidate and deepen the use of arrays in C. At t
 
 Create a new project in Visual Studio to work on this task. Write all code that is necessary for processing this task directly into the main function of the newly created project. As an individual deepening, the individual components of the programme can be structured into different functions. This makes it possible, for example, to look at function calls with array parameters or pointers.
 
-## Task 1 Define array with all lower case letters
+## Define array with all lower case letters
 
 Declare and initialise an array containing all lowercase letters from a to z. Use a loop for this and consciously set the implicit type conversion between int and char.
 
