@@ -3,9 +3,9 @@
 int main()
 {
 	// Initialize helper variables
-	int lowercaseAsciiOffset = 'a';				// Integer representation of lowercase letter 'a'
-	int uppercaseLowercaseOffset = 'a' - 'A';	// Difference of lowercase and uppercase letters in ascii table
-	char letters[26];							// Declaration of emtpy array for 26 characters (a-z)
+	int lowercaseAsciiOffset = 'a'; // Integer representation of lowercase letter 'a'
+	int uppercaseLowercaseOffset = 'a' - 'A'; // Difference of lowercase and uppercase letters in ascii table
+	char letters[26]; // Declaration of emtpy array for 26 characters (a-z)
 
 	// Fill previously declared array with letters from 'a' through 'z'
 	// Make use of implicit type conversion char <--> int
@@ -15,7 +15,7 @@ int main()
 
 	// Declare emtpy array which will contain the entered name.
 	char name[100];
-	printf("Geben Sie bitte Ihren Namen ein: ");	// Prompt user to type a name
+	printf("Geben Sie bitte Ihren Namen ein: "); // Prompt user to type a name
 	// Read entered name with up to 99 characters. Automatically set name[99] = '\0'
 	scanf_s("%99s", name, 100);
 
@@ -26,8 +26,8 @@ int main()
 
 		// Convert letter to uppercase if the user entered name in lowercase.
 		if (letter >= 'a') {
-			letter -= uppercaseLowercaseOffset;	// Actual lowercase-to-uppercase conversion
-			name[nameIndex] = letter;			// Substitution in name array
+			letter -= uppercaseLowercaseOffset; // Actual lowercase-to-uppercase conversion
+			name[nameIndex] = letter; // Substitution in name array
 		}
 
 		// Calculate position in letter array.
